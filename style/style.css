@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Permanent+Marker&display=swap');
+
+:root{
+    --font-family-indie: 'Indie Flower', cursive;
+    --font-family-permanent: 'Permanent Marker', cursive;
+    --pading-padrao: 5px;
+}
+
+body{
+    background-color: rgb(221, 217, 217);
+}
+
+header{
+    margin: auto;
+    width: calc(70% - 100px);
+    font-size: 1.5em;
+    font-family: var(--font-family-permanent);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main{
+    padding: 10px;
+    font-family: var(--font-family-indie);
+    margin: auto;
+    height: 500px;
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 7%;
+    background-color: #ffd700;
+}
+
+.dados{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+.dados input{
+    width: 30%;
+    background-color: orange;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.dados button{
+    margin-top: 8%;
+    margin-bottom: 8%;
+    align-self: center;
+    font-family: var(--font-family-indie);
+    font-size: 1.4em;
+    border: none;
+    border-radius: 100%;
+    padding: 20px;
+    background-color: orangered;
+    color: whitesmoke;
+}
+
+.resultado{
+    margin: auto;
+    font-size: 1.3em;
+}
+
+#resultadoJuros{
+    font-weight: bold;
+    color: red;
+}
+
+#resultadoMontante{
+    font-weight: bold;
+    color: red;
+}
+
+footer{
+    margin: auto;
+    padding: 5%;
+    width: 80%;
+    text-align: center;
+    font-family: var(--font-family-indie);
+    font-size: 0.9rem;
+
+}

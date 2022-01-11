@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de rendimentos</title>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 
 <body>
@@ -20,19 +19,24 @@
 
         <section class="dados">
             <span class="valores">Digite o valor em reais:</span>
-            <input type="number">
-            <span class="valores">Digite o tempo de aplicação do dinheiro:</span>
-            <input type="number">
+            <input id="capital" onchange="" type="number">
+            <span class="valores">Digite o tempo de aplicação do dinheiro, em meses:</span>
+            <input id="tempo" onchange="teste()" type="number">
             <span class="valores">Digite a taxa de rendimento mensal dessa aplicação:</span>
-            <input type="number">
-            <button>Calcular</button>
-        </section>
+            <input id="taxa" onchange="" type="number">
+            <button onclick="calcJM()">Calcular</button>
+            <div class="resultado">
+                <div>
+                    <span>A aplicação irá render:</span>
+                    <span id="resultadoJuros"></span>
+                </div>
+    
+                <div>
+                    <span>O Montante total é de:</span>
+                    <span id="resultadoMontante"></span>
+                </div>
+            </div>
 
-        <section class="resultado">
-                A aplicação irá render:
-                <div id="resultadoJuros"></div>
-                O Montante total é de:
-                <div id="resultadoMontante"></div>
         </section>
 
     </main>
@@ -40,6 +44,8 @@
     <footer>
         Desenvolvido por David Ribeiro da Silva.
     </footer>
+
+    <script src="./script/script.js"></script>
 
 </body>
 
