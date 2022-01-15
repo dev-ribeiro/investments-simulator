@@ -12,19 +12,19 @@ body{
 
 header{
     margin: auto;
-    width: calc(70% - 100px);
-    font-size: 1.5em;
+    width: calc(100% - 10rem);
+    font-size: 2em;
     font-family: var(--font-family-permanent);
     text-align: center;
     margin-bottom: 20px;
 }
 
 main{
-    padding: 10px;
+    padding: 2em;
+    font-size: 2em;
     font-family: var(--font-family-indie);
     margin: auto;
-    height: 500px;
-    width: 400px;
+    width: calc(100% - 10em);
     border: 1px solid black;
     border-radius: 7%;
     background-color: #ffd700;
@@ -33,21 +33,20 @@ main{
 .dados{
     display: flex;
     flex-direction: column;
-    height: 300px;
     width: 100%;
-    font-size: 1.2em;
 }
 
 .dados input{
-    width: 30%;
+    width: 4.7em;
     background-color: orange;
     color: white;
-    margin-bottom: 20px;
+    border-radius: 20%;
+    font-size: 1.1em;
 }
 
 .dados button{
-    margin-top: 8%;
-    margin-bottom: 8%;
+    margin-top: 1em;
+    margin-bottom: 1em;
     align-self: center;
     font-family: var(--font-family-indie);
     font-size: 1.4em;

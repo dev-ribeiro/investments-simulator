@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de rendimentos</title>
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="icon" href="#">
 </head>
 
 <body>
@@ -19,12 +20,12 @@
 
         <section class="dados">
             <span class="valores">Digite o valor em reais:</span>
-            <input id="capital" onchange="teste()" type="number">
+            <input id="capital" type="number">
             <span class="valores">Digite o tempo de aplicação do dinheiro, em meses:</span>
-            <input id="tempo" onchange="teste()" type="number">
+            <input id="tempo" type="number">
             <span class="valores">Digite a taxa de rendimento mensal dessa aplicação:</span>
-            <input id="taxa" onchange="teste()" type="number">
-            <button onclick="calcJuros()">Calcular</button>
+            <input id="taxa" type="number">
+            <button id="botao">Calcular</button>
             <div class="resultado">
                 <div>
                     <span>A aplicação irá render:</span>
