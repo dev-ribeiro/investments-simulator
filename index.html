@@ -1,40 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quer investir? Confira essas dicas</title>
-    <link rel="stylesheet" href="./style/page-index.css">
-    <link rel="icon" href="./assets/icons/icon.svg">
-    <script src="./script/page-index.js" async></script>
+    <title>Calculadora de rendimentos</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="icon" href="#">
 </head>
+
 <body>
 
     <header>
-        <img src="./assets/icons/logo.svg" alt="">
-        <nav>
-            <a href="https://dev-ribeiro.github.io/curriculo/">Meu currículo</a>
-        </nav>
+        Calculadora de Rendimentos
     </header>
 
     <main>
-        <div class="calculadora">
-            <h2>Quer calcular seus rendimentos?</h2>
-            <img src="./assets/images/calculadora.jpg" alt="calculadora">
-            <a href="./pages/calcular.html"><button id="toCalculate">Acessar</button></a>
-        </div>
-        <div class="investimentos">
-            <h2>Opções de investimento</h2>
-            <img src="./assets/images/money.jpg" alt="money">
-            <button id="toInvestments">Acessar</button>
-        </div>
+
+        <section class="dados">
+            <span class="valores">Digite o valor em reais:</span>
+            <input id="capital" type="number">
+            <span class="valores">Digite o tempo de aplicação do dinheiro, em meses:</span>
+            <input id="tempo" type="number">
+            <span class="valores">Digite a taxa de rendimento mensal dessa aplicação:</span>
+            <input id="taxa" type="number">
+            <button id="botao">Calcular</button>
+            <div class="resultado">
+                <div>
+                    <span>A aplicação irá render:</span>
+                    <span id="resultadoJuros"></span>
+                </div>
+    
+                <div>
+                    <span>O Montante total é de:</span>
+                    <span id="resultadoMontante"></span>
+                </div>
+            </div>
+
+        </section>
+
     </main>
 
     <footer>
-        <h3>AVISO!</h3>
-        <p>O conteúdo da página não consiste em recomendação de investimento e a página é meramente exemplificativa. Tome decisões por sua conta e risco.</p>
+        Desenvolvido por David Ribeiro da Silva.
     </footer>
 
+    <script src="./script/script.js"></script>
+
 </body>
+
 </html>

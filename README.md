@@ -4,13 +4,10 @@
     - Calcular o rendimento que uma aplicação financeira pode obter em n meses;
     - Procurar opções de investimento que apresentam essa rentabilidade desejada. 
 
-## Notas de atualização de 18/01/22:
-    - Reestruturação do projeto, com a adição de novas páginas.
-
-## Notas de atualização de 14/01/22:
+## Notas de atualização de 14/01/21:
     - Ajuste de tamanhos no CSS;
     - Remoção dos códigos Javascript inline nas tags HTML.
 
-## Notas de atualização de 11/01/22:
+## Notas de atualização de 11/01/21:
     - Revisão do CSS da página;
     - Início dos testes do código JS.
