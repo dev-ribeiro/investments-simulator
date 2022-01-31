@@ -1,36 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Confira essas opções de investimento</title>
-    <link rel="stylesheet" href="./style/page_index.css">
-    <link rel="icon" href="./assets/icons/icon_page.svg">
-    <script src="./script/page_index.js" defer></script>
+    <title>Calculadora de rendimentos</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
+
 <body>
+    
+    <div id="back">
+        <img src="./assets/icons/keyboard_return_black_48dp.svg" alt="">
+    </div>
+    
+    <div class="apresentation" id="apresentation">
+        <h3>O que deseja acessar?</h3>
+        <div class="options">
+            <div class="calculator" id="calculator">
+                Calculadora
+            </div>
+            <div class="investments" id="investments">
+                Investimentos
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Página calculadora -->
+
     <header>
-        <img src="./assets/icons/logo.svg" alt="">
-        <a href="https://dev-ribeiro.github.io/curriculo/">Meu currículo</a>
+        Calculadora de Rendimentos
     </header>
+
     <main>
-        <section>
-            <h3>Opções de investimento</h3>
-            <img src="./assets/images/img1.jpg" alt="">
-            <a href="./pages/page_invest.html"><input type="button" value="ACESSAR" id="acessInvestments"></a>
+
+        <section class="dados">
+            <span class="valores">Digite o valor em reais:</span>
+            <input id="capital" type="number">
+            <span class="valores">Digite o tempo de aplicação do dinheiro, em meses:</span>
+            <input id="tempo" type="number">
+            <span class="valores">Digite a taxa de rendimento mensal dessa aplicação:</span>
+            <input id="taxa" type="number">
+            <button id="botao">Calcular</button>
+            <div class="resultado">
+                <div>
+                    <span>A aplicação irá render:</span>
+                    <span id="resultadoJuros"></span>
+                </div>
+    
+                <div>
+                    <span>O Montante total é de:</span>
+                    <span id="resultadoMontante"></span>
+                </div>
+            </div>
 
         </section>
-        <section>
-            <h3>Calcule seus rendimentos:</h3>
-            <img src="./assets/images/img2.jpg" alt="">
-            <a href="./pages/page_calc.html"><input type="button" value="ACESSAR" id="acessCalculator"></a>
-            
-        </section>
+
     </main>
+
     <footer>
-        <h3>AVISO!</h3>
-        <p>O conteúdo da página não é recomendação de investimento. Tome decisões por sua conta e risco.</p>
+        Desenvolvido por David Ribeiro da Silva.
     </footer>
+
+    <script src="./script/index.js"></script>
+
+    <script src="./script/interface.js"></script>
+
 </body>
+
 </html>
