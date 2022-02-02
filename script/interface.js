@@ -31,8 +31,8 @@ function calculate() {
     let juros = calculating.calcJuros(convertCapital,convertFee,convertTime);
     let montante = calculating.calcMontante(convertCapital,convertFee,convertTime);
 
-    resultRendimento.innerHTML = juros;
-    resultMontante.innerHTML = montante
+    resultRendimento.innerText = "R$ " + juros.toFixed(2);
+    resultMontante.innerText = "R$ " + montante.toFixed(2);
 
 }
 
@@ -44,10 +44,10 @@ function createPageApresentation(){
     let divOptions = document.createElement('div');
     let divCalculator = document.createElement('div');
     let titleCalculator = document.createElement('h4');
-    let imageCalculator = document.createElement('img');
+    // let imageCalculator = document.createElement('img');
     let divInvestments = document.createElement('div');
     let titleInvestments = document.createElement('h4');
-    let imageInvestments = document.createElement('img');
+    // let imageInvestments = document.createElement('img');
 
     // Alocar os elementos
     body.appendChild(divApresentation);
@@ -56,9 +56,9 @@ function createPageApresentation(){
     divOptions.appendChild(divCalculator);
     divOptions.appendChild(divInvestments);
     divCalculator.appendChild(titleCalculator);
-    divCalculator.appendChild(imageCalculator);
+    // divCalculator.appendChild(imageCalculator);
     divInvestments.appendChild(titleInvestments);
-    divInvestments.appendChild(imageInvestments);
+    // divInvestments.appendChild(imageInvestments);
 
     // Atribuir classes aos elementos
     divApresentation.classList = 'apresentation';
@@ -72,8 +72,8 @@ function createPageApresentation(){
     titleInvestments.innerText = 'Investimentos';
 
     // Atribuir as imagens
-    imageCalculator.src = '../assets/images/img2.jpg';
-    imageInvestments.src = '../assets/images/img1.jpg';
+    // imageCalculator.src = '../assets/images/img2.jpg';
+    // imageInvestments.src = '../assets/images/img1.jpg';
 
 }
 
