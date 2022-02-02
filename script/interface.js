@@ -3,18 +3,17 @@ var time = document.getElementById("tempo");
 var fee = document.getElementById("taxa");
 var resultRendimento = document.getElementById("resultadoJuros");
 var resultMontante = document.getElementById("resultadoMontante");
-var apresentation = document.getElementById("apresentation");
-var calculator = document.getElementById("calculator");
-var investments = document.getElementById("investments");
 var back = document.getElementById("back");
 var botao = document.getElementById("botao");
+var body = document.getElementsByTagName('body')[0];
 
-botao.addEventListener('click',calcular);
-calculator.addEventListener('click',closeWindow);
-investments.addEventListener('click',createPage);
-back.addEventListener('click',returnMenu);
+botao.addEventListener('click',calculate);
 
-function calcular() {
+onload = () => {
+    createPageApresentation()
+}
+
+function calculate() {
 
     let convertCapital = Number(capital.value);
     let convertTime = Number(time.value);
@@ -28,16 +27,51 @@ function calcular() {
 
 }
 
-function closeWindow(){
-    apresentation.classList = "none"
+
+
+function createPageApresentation(){
+
+    // Criação dos eleementos
+    let divApresentation = document.createElement('div');
+    let titleApresentation = document.createElement('h3');
+    let divOptions = document.createElement('div');
+    let divCalculator = document.createElement('div');
+    let titleCalculator = document.createElement('h4');
+    let imageCalculator = document.createElement('img');
+    let divInvestments = document.createElement('div');
+    let titleInvestments = document.createElement('h4');
+    let imageInvestments = document.createElement('img');
+
+    // Alocar os elementos
+    body.appendChild(divApresentation);
+    divApresentation.appendChild(titleApresentation);
+    divApresentation.appendChild(divOptions);
+    divOptions.appendChild(divCalculator);
+    divOptions.appendChild(divInvestments);
+    divCalculator.appendChild(titleCalculator);
+    divCalculator.appendChild(imageCalculator);
+    divInvestments.appendChild(titleInvestments);
+    divInvestments.appendChild(imageInvestments);
+
+    // Atribuir classes aos elementos
+    divApresentation.classList = 'apresentation';
+    divOptions.classList = 'options';
+    divCalculator.classList = 'calculator';
+    divInvestments.classList = 'investments';
+
+    // Atribuir o conteúdo aos títulos
+    titleApresentation.innerText = 'O que deseja acessar?';
+    titleCalculator.innerText = 'Calculadora';
+    titleInvestments.innerText = 'Investimentos';
+
+    // Atribuir as imagens
+    imageCalculator.src = '../assets/images/img2.jpg';
+    imageInvestments.src = '../assets/images/img1.jpg';
+
 }
 
-function returnMenu(){
-    apresentation.classList = "apresentation"
-}
+function createPageInvestments(){
 
-function createPage(){
-    let body = document.getElementsByTagName('body')[0];
     let div1 = document.createElement('div');
     div1.innerHTML = "Este conteúdo ainda está em desenvolvimento, volte novamente em outro momento.";
     div1.classList = "teste";

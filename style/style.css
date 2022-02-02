@@ -25,31 +25,71 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    height: 100vh;
     width: 100vw;
+    height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
-    font-family: var(--font-family-indie);
-    font-size: 90px;
     background-color: rgba(245, 245, 96, 0.9);
+    font-family: var(--font-family-permanent);
+}
+
+.apresentation h3{
+    font-size: 30px;
+    color: red;
 }
 
 .options{
-    width: 100%;
     display: flex;
-    flex-direction: row;
+    width: 50%;
+    padding: 5px;
     justify-content: space-around;
 }
 
-.calculator, .investments{
-    font-family: var(--font-family-permanent);
-    padding: 20px;
-    border: none;
+.options div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid tomato;
     border-radius: 30px;
-    background-color: tomato;
-    cursor: pointer;
+    background-color: orange;
+}
+
+.options img{
+    position: relative;
+    width: 8em;
+    height: 6em;
+    border-radius: 50%;
+}
+
+.options h4{
+    font-size: 2em;
+}
+.calculator{
+    transition: 1000ms;
+}
+
+.calculator:hover{
+    background-color: red;
+    color: white;
+    width: 20em;
+    height: 15em;
+    padding: 5px;
+}
+
+.investments{
+    transition: 1000ms;
+}
+
+.investments:hover{
+    background-color: red;
+    color: white;
+    width: 20em;
+    height: 15em;
+    padding: 5px;
 }
 
 /* Investimentos */
