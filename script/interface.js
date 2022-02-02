@@ -8,6 +8,7 @@ var simulate = document.getElementById("simulate");
 var pageInvestments = document.getElementById("pageInvestments");
 var botao = document.getElementById("botao");
 var body = document.getElementsByTagName("body")[0];
+var selectRendaFixa = document.getElementById("selectRendaFixa");
 
 botao.addEventListener('click',calculate);
 
@@ -16,6 +17,7 @@ onload = () => {
     acessPageCalculator();
     acessPageInvestments();
     manipulateNav();
+    insertOptionsRendaFixa();
 }
 
 function calculate() {
@@ -24,8 +26,8 @@ function calculate() {
     let convertTime = Number(time.value);
     let convertFee = Number(fee.value);
 
-    let juros = calcJuros(convertCapital,convertFee,convertTime);
-    let montante = calcMontante(convertCapital,convertFee,convertTime);
+    let juros = calculating.calcJuros(convertCapital,convertFee,convertTime);
+    let montante = calculating.calcMontante(convertCapital,convertFee,convertTime);
 
     resultRendimento.innerHTML = juros;
     resultMontante.innerHTML = montante
@@ -125,4 +127,19 @@ function manipulateNav(){
     navElementHome.addEventListener('click',()=>{
         apresentation.classList = 'apresentation';
     });
-} 
+}
+
+function insertOptionsRendaFixa(){
+    for(let selic of rendaFixa.selic_2022){
+        selectRendaFixa.innerHTML += `<option>${selic.name}</option>`
+    };
+
+    for(let ipca of rendaFixa.ipca_2022){
+        selectRendaFixa.innerHTML += `<option>${ipca.name}</option>`
+    };
+
+    for(let prefixado of rendaFixa.prefixado_2022){
+        selectRendaFixa.innerHTML += `<option>${prefixado.name}</option>`
+    };
+};
+
