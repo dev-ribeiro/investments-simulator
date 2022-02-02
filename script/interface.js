@@ -8,16 +8,18 @@ var simulate = document.getElementById("simulate");
 var pageInvestments = document.getElementById("pageInvestments");
 var botao = document.getElementById("botao");
 var body = document.getElementsByTagName("body")[0];
+var contentRendaFixa = document.getElementById("contentRendaFixa");
 var selectRendaFixa = document.getElementById("selectRendaFixa");
-
-botao.addEventListener('click',calculate);
+var search = document.getElementById("search");
 
 onload = () => {
+    botao.addEventListener('click',calculate);
     createPageApresentation();
     acessPageCalculator();
     acessPageInvestments();
     manipulateNav();
     insertOptionsRendaFixa();
+    search.addEventListener('click',searchFees);
 }
 
 function calculate() {
@@ -130,16 +132,39 @@ function manipulateNav(){
 }
 
 function insertOptionsRendaFixa(){
-    for(let selic of rendaFixa.selic_2022){
-        selectRendaFixa.innerHTML += `<option>${selic.name}</option>`
+    for(let investimentoRendaFixa of rendaFixa){
+        selectRendaFixa.innerHTML += `<option>${investimentoRendaFixa.name}</option>`;
     };
+}
 
-    for(let ipca of rendaFixa.ipca_2022){
-        selectRendaFixa.innerHTML += `<option>${ipca.name}</option>`
+function searchFees(){
+    let investmentTarget = selectRendaFixa.value;
+    let associate = (x) => {
+        return x.name === investmentTarget
     };
+    let result = rendaFixa.find(associate);
 
-    for(let prefixado of rendaFixa.prefixado_2022){
-        selectRendaFixa.innerHTML += `<option>${prefixado.name}</option>`
-    };
-};
+    // Teste - mostrando a taxa de rendimento
+    let divTeste = document.createElement('div');
+    contentRendaFixa.appendChild(divTeste);
+    divTeste.innerHTML = "A taxa de rendimento é de " + (result.value * 100).toFixed(2) + " %";
 
+    // Update
+    let divLastUpdate = document.createElement('div');
+    divLastUpdate.innerHTML = LASTUPDATE;
+    contentRendaFixa.appendChild(divLastUpdate);
+
+    //Removendo o botão
+    contentRendaFixa.removeChild(search);
+
+    // Atualizando o botão
+    let newButton = document.createElement('button');
+    newButton.innerHTML = 'Pesquisar novamente';
+    contentRendaFixa.appendChild(newButton);
+    newButton.addEventListener('click', ()=>{
+        contentRendaFixa.removeChild(newButton);
+        contentRendaFixa.removeChild(divLastUpdate);
+        contentRendaFixa.removeChild(divTeste);
+        contentRendaFixa.appendChild(search);
+    });
+}
