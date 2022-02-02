@@ -3,14 +3,19 @@ var time = document.getElementById("tempo");
 var fee = document.getElementById("taxa");
 var resultRendimento = document.getElementById("resultadoJuros");
 var resultMontante = document.getElementById("resultadoMontante");
-var back = document.getElementById("back");
+var nav = document.getElementById("nav");
+var simulate = document.getElementById("simulate");
+var pageInvestments = document.getElementById("pageInvestments");
 var botao = document.getElementById("botao");
-var body = document.getElementsByTagName('body')[0];
+var body = document.getElementsByTagName("body")[0];
 
 botao.addEventListener('click',calculate);
 
 onload = () => {
-    createPageApresentation()
+    createPageApresentation();
+    acessPageCalculator();
+    acessPageInvestments();
+    manipulateNav();
 }
 
 function calculate() {
@@ -26,8 +31,6 @@ function calculate() {
     resultMontante.innerHTML = montante
 
 }
-
-
 
 function createPageApresentation(){
 
@@ -70,17 +73,56 @@ function createPageApresentation(){
 
 }
 
-function createPageInvestments(){
-
-    let div1 = document.createElement('div');
-    div1.innerHTML = "Este conteúdo ainda está em desenvolvimento, volte novamente em outro momento.";
-    div1.classList = "teste";
-    body.appendChild(div1);
-    let div2 = document.createElement('div');
-    div2.innerHTML = "Voltar";
-    div2.classList = "teste2";
-    div1.appendChild(div2);
-    div2.addEventListener('click',()=>{
-        div1.classList = "none"
+function acessPageCalculator(){
+    let apresentation = document.querySelector('.apresentation');
+    let calculator = document.querySelector('.calculator');
+    calculator.addEventListener('click',() => {
+        apresentation.classList = 'none';
+        pageInvestments.classList = 'none';
     })
 }
+
+function acessPageInvestments(){
+    let apresentation = document.querySelector('.apresentation');
+    let investments = document.querySelector('.investments');
+    investments.addEventListener('click',() => {
+        apresentation.classList = 'none';
+        simulate.classList = 'none';
+    })
+}
+
+function manipulateNav(){
+
+    // Criando os elementos
+    let navElementCalculadora = document.createElement('a');
+    let navElementInvestimentos = document.createElement('a');
+    let navElementHome = document.createElement('a');
+
+    // Atribuindo o conteúdo
+    navElementCalculadora.innerText = 'Calculadora';
+    navElementInvestimentos.innerText = 'Opções de Investimentos';
+    navElementHome.innerText = 'Home';
+
+    // Alocando na nav
+    nav.appendChild(navElementCalculadora);
+    nav.appendChild(navElementInvestimentos);
+    nav.appendChild(navElementHome);
+
+    // Acessando os itens do menu
+    let apresentation = document.querySelector('.apresentation');
+
+    // Criando os eventos
+    navElementCalculadora.addEventListener('click',()=>{
+        apresentation.classList = 'none';
+        pageInvestments.classList = 'none';
+        simulate.classList = 'dados';
+    });
+    navElementInvestimentos.addEventListener('click',()=>{
+        apresentation.classList = 'none';
+        simulate.classList = 'none';
+        pageInvestments.classList = 'pageInvestments';
+    });
+    navElementHome.addEventListener('click',()=>{
+        apresentation.classList = 'apresentation';
+    });
+} 

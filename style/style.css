@@ -8,14 +8,36 @@
 
 body{
     background-color: rgb(221, 217, 217);
+    height: 100vh;
+    width: 100vw;
 }
 
-/* Return */
-#back{
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    color: black;
+/* Header */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    width: calc(100% - 10rem);
+    /* font-size: 1.2em; */
+    font-family: var(--font-family-permanent);
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: tomato;
+    color: wheat;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+}
+
+nav a{
+    text-decoration: none;
+    color: wheat;
     cursor: pointer;
 }
 
@@ -92,64 +114,35 @@ body{
     padding: 5px;
 }
 
-/* Investimentos */
-.teste{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 50px;
-    text-align: center;
-    background-color: rgba(245, 245, 96, 0.9);
-}
-
-.teste2{
-    background-color: orange;
-    margin-top: 10px;
-    padding: 5px;
-    cursor: pointer;
-}
-
 /* Calculadora de investimentos */
-
-header{
-    margin: auto;
-    margin-top: 60px;
-    width: calc(100% - 10rem);
-    font-size: 3em;
-    font-family: var(--font-family-permanent);
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-main{
+/* main{
     padding: 2em;
-    font-size: 2em;
     font-family: var(--font-family-indie);
     margin: auto;
     width: 500px;
     border: 1px solid black;
     border-radius: 50px;
     background-color: #ffd700;
-}
+} */
 
 .dados{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    padding: 2em;
+    font-family: var(--font-family-indie);
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: #ffd700;
+    width: 500px;
+    font-size: 1.25em;
 }
 
 .dados input{
-    width: 4.7em;
+    width: 7em;
     background-color: white;
     color: black;
     border-radius: 20px;
-    font-size: 1.1em;
 }
 
 .dados button{
@@ -167,7 +160,6 @@ main{
 
 .resultado{
     margin: auto;
-    font-size: 1.3em;
 }
 
 #resultadoJuros{
@@ -180,18 +172,7 @@ main{
     color: red;
 }
 
-footer{
-    margin: auto;
-    padding: 5%;
-    width: 80%;
-    text-align: center;
-    font-family: var(--font-family-indie);
-    font-size: 1.9rem;
-
-}
-
 /*display none*/
-
 .none{
     display: none;
 }

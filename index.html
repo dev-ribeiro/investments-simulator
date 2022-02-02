@@ -12,19 +12,20 @@
 
 <body>
     
-    <div id="back">
-        <img src="./assets/icons/keyboard_return_black_48dp.svg" alt="">
-    </div>
 
-    <!-- Página calculadora -->
 
     <header>
-        Calculadora de Rendimentos
+        <h1>Simule seus Investimentos</h1>
+        <nav id="nav">
+            <!-- <a href="">Calculadora</a>
+            <a href="">Opções de Investimentos</a>
+            <a href="">Home</a> -->
+        </nav>
     </header>
 
     <main>
 
-        <section class="dados">
+        <section class="dados" id="simulate">
             <span class="valores">Digite o valor em reais:</span>
             <input id="capital" type="number">
             <span class="valores">Digite o tempo de aplicação do dinheiro, em meses:</span>
@@ -43,14 +44,13 @@
                     <span id="resultadoMontante"></span>
                 </div>
             </div>
+        </section>
 
+        <section class="pageInvestments" id="pageInvestments">
+            <p>Página em desenvolvimento</p>
         </section>
 
     </main>
-
-    <footer>
-        Desenvolvido por David Ribeiro da Silva.
-    </footer>
 
     <script src="./script/index.js"></script>
 
