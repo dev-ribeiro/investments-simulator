@@ -1,5 +1,4 @@
-/* Medias queries - Dispositivos móveis */
-@media screen and (max-width: 425px){
+@media screen and (max-width: 500px){
 
     /* ---- Página apresentação ---- */
 
@@ -32,8 +31,61 @@
     header{
         flex-direction: column;
         padding: 1px;
-        width: 50vw;
-        font-size: 5px;
+        width: 60vw;
+        font-size: 2.5vw;
+    }
+
+    nav{
+        /* display: none; */
+        flex-direction: column;
+    }
+
+    nav a {
+        font-size: 2vw;
+    }
+
+    /* Calculadora de investimentos */
+    .dados{
+        align-items: center;
+        border: none;
+        border-radius: 0;
+    }
+
+    .dados input{
+        margin-bottom: 5px;
+        width: 20vw;
+        border: none;
+        border-radius: 0;
+    }
+
+    .dados button{
+        padding: 5px;
+    }
+
+    /* Página opções de investimento */
+    .pageInvestments{
+        border: none;
+        border-radius: 0;
+        font-size: 2vw;
+    }
+
+    .contentRendaFixa{
+        padding: 1px;
+        font-size: 4vw;
+    }
+
+    .pageInvestments h3{
+        font-size: 5vw;
+    }
+
+    #selectRendaFixa{
+        width: 90%;
+        font-size: 3.5vw;
+    }
+
+    .pageInvestments button{
+        width: 30vw;
+        font-size: 3.5vw;
     }
 
 }
