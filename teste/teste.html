@@ -6,81 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste</title>
-    <style>
-        .apresentation{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        .apresentation h3{
-            font-size: 30px;
-        }
-
-        .options{
-            display: flex;
-            width: 50%;
-            padding: 5px;
-            justify-content: space-around;
-        }
-
-        .options div{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            padding: 10px;
-            border: 1px solid tomato;
-            border-radius: 30px;
-            background-color: orange;
-        }
-
-        .options img{
-            position: relative;
-            width: 8em;
-            height: 6em;
-            border-radius: 50%;
-        }
-
-        .options h4{
-            font-size: 2em;
-        }
-        .calculator{
-            transition: 1000ms;
-        }
-
-        .calculator:hover{
-            background-color: red;
-            color: white;
-            width: 20em;
-            height: 15em;
-            padding: 5px;
-        }
-
-        .investments{
-            transition: 1000ms;
-        }
-
-        .investments:hover{
-            background-color: red;
-            color: white;
-            width: 20em;
-            height: 15em;
-            padding: 5px;
-        }
-        
-    </style>
+    <link rel="stylesheet" href="./teste_style.css">
+    <link rel="stylesheet" href="./mobile.css">
 </head>
 
 <body>
 
-    <div class="apresentation" id="apresentation">
+    <!-- <div class="apresentation" id="apresentation">
         <h3>O que deseja acessar?</h3>
         <div class="options">
             <div class="calculator" id="calculator">
@@ -93,7 +25,23 @@
             </div>
         </div>
 
-    </div>
+    </div> -->
+
+    <nav>
+        <ul class="menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Sobre</a></li>
+                    <li><a href="#">O que fazemos?</a>
+                       <ul>
+                            <li><a href="#">Web Design</a></li>
+                            <li><a href="#">SEO</a></li>
+                            <li><a href="#">Design</a></li>
+                         </ul>
+                  </li>
+              <li><a href="#">Links</a></li>
+              <li><a href="#">Contato</a></li>
+      </ul>
+      </nav>
 
 </body>
 

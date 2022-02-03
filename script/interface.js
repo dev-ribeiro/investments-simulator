@@ -83,6 +83,7 @@ function acessPageCalculator(){
     calculator.addEventListener('click',() => {
         apresentation.classList = 'none';
         pageInvestments.classList = 'none';
+        simulate.classList = 'dados';
     })
 }
 
@@ -92,6 +93,7 @@ function acessPageInvestments(){
     investments.addEventListener('click',() => {
         apresentation.classList = 'none';
         simulate.classList = 'none';
+        pageInvestments.classList = 'pageInvestments';
     })
 }
 
@@ -147,7 +149,7 @@ function searchFees(){
     // Teste - mostrando a taxa de rendimento
     let divTeste = document.createElement('div');
     contentRendaFixa.appendChild(divTeste);
-    divTeste.innerHTML = "A taxa de rendimento é de " + (result.value * 100).toFixed(2) + " %";
+    divTeste.innerHTML = "A taxa de rendimento é de " + (result.value * 100).toFixed(2) + " % aa";
 
     // Update
     let divLastUpdate = document.createElement('div');

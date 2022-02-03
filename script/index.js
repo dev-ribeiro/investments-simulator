@@ -1,6 +1,6 @@
-const LASTUPDATE = 'Atualizado em 02/02/22 às 17:00';
+const LASTUPDATE = 'Atualizado em 02/02/22 às 20:37';
 const YEAR = 2022;
-const SELICOVER = 0.0925;
+const SELICOVER = 0.1075;
 const INFLACAO = 0.1006;
 
 let calculating = {

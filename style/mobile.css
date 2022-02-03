@@ -1,0 +1,39 @@
+/* Medias queries - Dispositivos móveis */
+@media screen and (max-width: 425px){
+
+    /* ---- Página apresentação ---- */
+
+    .apresentation{
+        width: 100%;
+        height: 100%;
+    }
+
+    .apresentation h3{
+        font-size: 1.2em;
+        color: red;
+    }
+
+    .options{
+        flex-direction: column;
+        width: 100px;
+    }
+
+    .options div{
+        padding: 0;
+        margin-bottom: 5px;
+    }
+
+    .options h4{
+        font-size: 10px;
+    }
+
+    /* ---- Header ---- */
+
+    header{
+        flex-direction: column;
+        padding: 1px;
+        width: 50vw;
+        font-size: 5px;
+    }
+
+}
