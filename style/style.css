@@ -8,6 +8,8 @@
 
 body{
     background-color: rgb(221, 217, 217);
+    padding: 0;
+    margin: 0;
     height: 100vh;
     width: 100vw;
 }
@@ -20,6 +22,7 @@ header{
     justify-content: space-between;
     margin: auto;
     width: calc(100% - 20vw);
+    height: 10vh;
     /* font-size: 1.2em; */
     font-family: var(--font-family-permanent);
     text-align: center;
@@ -120,14 +123,15 @@ nav a{
 .dados{
     display: flex;
     flex-direction: column;
-    padding: 4vw;
+    padding: 20px;
     font-family: var(--font-family-indie);
     margin: auto;
     border: 1px solid black;
     border-radius: 50px;
     background-color: #ffd700;
-    width: 60vw;
-    font-size: 2.51vw;
+    width: 30vw;
+    /* height: 50vh; */
+    /* font-size: 2.51vw; */
 }
 
 .dados input{
