@@ -21,6 +21,7 @@ header{
     align-items: center;
     justify-content: space-between;
     margin: auto;
+    margin-top: 10px;
     width: calc(100% - 20vw);
     height: 10vh;
     /* font-size: 1.2em; */
@@ -28,7 +29,7 @@ header{
     text-align: center;
     margin-bottom: 20px;
     padding: 5px;
-    font-size: 1.4vw;
+    font-size: 0.8vw;
     border-radius: 20px;
     background-color: tomato;
     color: wheat;
@@ -78,19 +79,19 @@ nav a{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-direction: column; */
+    flex-direction: column;
     padding: 10px;
     border: 1px solid tomato;
     border-radius: 30px;
     background-color: orange;
 }
 
-/* .options img{
+.options img{
     position: relative;
     width: 8em;
     height: 6em;
     border-radius: 50%;
-} */
+}
 
 .options h4{
     font-size: 2em;
@@ -135,7 +136,7 @@ nav a{
 }
 
 .dados input{
-    width: 15vw;
+    width: 20%;
     background-color: white;
     color: black;
     border-radius: 20px;
