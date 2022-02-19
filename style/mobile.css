@@ -1,0 +1,91 @@
+@media screen and (max-width: 500px){
+
+    /* ---- PÃ¡gina apresentaÃ§Ã£o ---- */
+
+    .apresentation{
+        width: 100%;
+        height: 100%;
+    }
+
+    .apresentation h3{
+        font-size: 1.2em;
+        color: red;
+    }
+
+    .options{
+        flex-direction: column;
+        width: 100px;
+    }
+
+    .options div{
+        padding: 0;
+        margin-bottom: 5px;
+    }
+
+    .options h4{
+        font-size: 10px;
+    }
+
+    /* ---- Header ---- */
+
+    header{
+        flex-direction: column;
+        padding: 1px;
+        width: 60vw;
+        font-size: 2.5vw;
+    }
+
+    nav{
+        /* display: none; */
+        flex-direction: column;
+    }
+
+    nav a {
+        font-size: 2vw;
+    }
+
+    /* Calculadora de investimentos */
+    .dados{
+        align-items: center;
+        border: none;
+        border-radius: 0;
+    }
+
+    .dados input{
+        margin-bottom: 5px;
+        width: 20vw;
+        border: none;
+        border-radius: 0;
+    }
+
+    .dados button{
+        padding: 5px;
+    }
+
+    /* PÃ¡gina opÃ§Ãµes de investimento */
+    .pageInvestments{
+        border: none;
+        border-radius: 0;
+        font-size: 2vw;
+    }
+
+    .contentRendaFixa{
+        padding: 1px;
+        font-size: 4vw;
+    }
+
+    .pageInvestments h3{
+        font-size: 5vw;
+    }
+
+    #selectRendaFixa{
+        width: 90%;
+        font-size: 3.5vw;
+    }
+
+    .pageInvestments button{
+        width: 30vw;
+        font-size: 3.5vw;
+    }
+
+}

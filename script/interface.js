@@ -72,8 +72,8 @@ function createPageApresentation(){
     titleInvestments.innerText = 'Investimentos';
 
     // Atribuir as imagens
-    imageCalculator.src = '../images/photos/img2.jpg';
-    imageInvestments.src = '../images/photos/img1.jpg';
+    imageCalculator.src = '../assets/photos/img2.jpg';
+    imageInvestments.src = '../assets/photos/img1.jpg';
 
 }
 
