@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const calcYield = require('../../controllers/calcs/calcs')
+const calcYield = require('../../service/calcs/calcs')
 
-router.post('/simulation/yield',express.json(),calcYield.calculateYield);
-router.post('/simulation/amount',express.json(),calcYield.calculateAmount)
+router.post('/yield',express.json(),calcYield.calculateYield);
+router.post('/amount',express.json(),calcYield.calculateAmount)
 
 module.exports = router
