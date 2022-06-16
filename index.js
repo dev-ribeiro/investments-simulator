@@ -6,5 +6,5 @@ const calcsRoute = require('./routes/calcs/calcsRoute');
 app.use('/api',calcsRoute);
 
 app.listen(process.env.PORT,(err)=>{
-    if(!err) console.log('Server running on port',process.env.PORT)
+    if(!err) console.log('Server running on port',3444)
 })
