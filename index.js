@@ -1,7 +1,7 @@
 require('dotenv').config()
 const express = require('express');
 const app = express();
-const calcsRoute = require('./routes/calcs/calcsRoute');
+const calcsRoute = require('./routes/handleCalcs/handleCalcsRoute');
 
 app.use('/api',calcsRoute);
 
