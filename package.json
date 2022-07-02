@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index",
+    "live":"nodemon index",
     "test": ""
   },
   "author": "David Ribeiro da Silva",
