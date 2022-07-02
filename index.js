@@ -7,7 +7,7 @@ const app = express();
 const calcsRoute = require('./routes/handleCalcs/handleCalcsRoute');
 
 // Application
-app.use('/api', calcsRoute);
+app.use('/api/calcs', calcsRoute);
 
 //Server
 const PORT = process.env.PORT || 3334;
