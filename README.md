@@ -5,4 +5,4 @@
 
 ## Principais funcionalidades:
 &nbsp;- Cálculos do montante e rendimentos;
-&nbsp;- Início da alocação das primeiras taxas de rendimento (SELIC e Inflação);
+&nbsp;- Consulta de opções de investimentos dentro de um banco de dados Mongo DB.
