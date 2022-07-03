@@ -6,6 +6,4 @@ const ratesSchema = new mongoose.Schema({
     rate:{type:Number}
 });
 
-const Rates = new mongoose.model('Rates',ratesSchema);
-
-module.exports = Rates
+module.exports = mongoose.model('Rates',ratesSchema);
