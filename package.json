@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index",
     "live": "nodemon index",
-    "test": ""
+    "test": "jest"
   },
   "author": "David Ribeiro da Silva",
   "license": "ISC",
