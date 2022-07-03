@@ -21,4 +21,4 @@ const url = process.env.URL;
 mongoose.connect(url);
 let db = mongoose.connection;
 db.on('error',()=>{console.log('Error')});
-db.once('open',()=>{console.log('Mongo DB connected')})
+db.once('open',()=>{console.log('Mongo DB connected')});
