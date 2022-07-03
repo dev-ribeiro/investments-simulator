@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index",
-    "live":"nodemon index",
+    "live": "nodemon index",
     "test": ""
   },
   "author": "David Ribeiro da Silva",
@@ -13,6 +13,7 @@
   "dependencies": {
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
+    "jest": "^28.1.2",
     "mongoose": "^6.4.0"
   }
 }
