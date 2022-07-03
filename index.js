@@ -6,9 +6,11 @@ const app = express();
 
 // Routes
 const calcsRoute = require('./routes/handleCalcs/handleCalcsRoute');
+const ratesRoute = require('./routes/ratesRouter/ratesRouter');
 
 // Application
 app.use('/api/calcs', calcsRoute);
+app.use('/api/rates',ratesRoute);
 
 //Server
 const PORT = process.env.PORT || 3334;
