@@ -9,7 +9,7 @@ const calcsRoute = require('./routes/handleCalcs/handleCalcsRoute');
 // Application
 app.use('/api/calcs', calcsRoute);
 app.get('/',(req,res)=>{
-    res.send(<h1>Hello World!</h1>)
+    res.send("Hello World!")
 })
 
 //Server
