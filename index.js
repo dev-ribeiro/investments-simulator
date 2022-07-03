@@ -5,10 +5,12 @@ const express = require('express');
 const app = express();
 
 // Routes
-const calcsRoute = require('./routes/handleCalcs/handleCalcsRoute');
+const apresentationRoute = require('./routes/apresentationRouter/apresentationRouter');
+const calcsRoute = require('./routes/handleCalcsRouter/handleCalcsRoute');
 const ratesRoute = require('./routes/ratesRouter/ratesRouter');
 
 // Application
+app.use('/',apresentationRoute);
 app.use('/api/calcs', calcsRoute);
 app.use('/api/rates',ratesRoute);
 
