@@ -8,11 +8,9 @@
 
 ***
 
-## Principais funcionalidades:
+## Principais funcionalidades
 
 ```text
     * Cálculos do montante e rendimentos;
     * Consulta de opções de investimentos dentro de um banco de dados Mongo DB.
 ```
-
-***
