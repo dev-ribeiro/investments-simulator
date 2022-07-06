@@ -4,7 +4,7 @@ const ratesModel = require("../models/ratesModel");
 const allRates = async (req, res) => {
     try {
         let docs = await ratesModel.find();
-        res.send(`${docs}`);
+        res.json(docs);
     } catch (error) {
         res.send(error)
     };
