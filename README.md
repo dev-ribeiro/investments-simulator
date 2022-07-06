@@ -1,8 +1,18 @@
 # API de simulação de investimento
 
-## Descrição:
-<p>Uma API que traz as funcionalidades de simulação e busca de uma opção de investimento.</p>
+## Descrição
+
+```text
+# Uma API que traz as funcionalidades de simulação e busca de uma opção de investimento num banco de dados não relacional (MongoDB).
+```
+
+***
 
 ## Principais funcionalidades:
-&nbsp;- Cálculos do montante e rendimentos;
-&nbsp;- Consulta de opções de investimentos dentro de um banco de dados Mongo DB.
+
+```text
+    * Cálculos do montante e rendimentos;
+    * Consulta de opções de investimentos dentro de um banco de dados Mongo DB.
+```
+
+***
