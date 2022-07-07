@@ -11,6 +11,7 @@
   "author": "David Ribeiro da Silva",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "jest": "^28.1.2",

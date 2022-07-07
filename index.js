@@ -1,6 +1,7 @@
 // Dependencies
 require('dotenv').config();
 const mongoose = require('mongoose');
+const cors = require('cors');
 const express = require('express');
 const app = express();
 
@@ -10,6 +11,7 @@ const calcsRoute = require('./routes/handleCalcsRouter/handleCalcsRoute');
 const ratesRoute = require('./routes/ratesRouter/ratesRouter');
 
 // Application
+app.use(cors())
 app.use('/',apresentationRoute);
 app.use('/api/calcs', calcsRoute);
 app.use('/api/rates',ratesRoute);
