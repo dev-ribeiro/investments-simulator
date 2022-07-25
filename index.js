@@ -23,8 +23,12 @@ app.listen(PORT, (err) => {
 });
 
 //Database
-const url = process.env.URL;
+const user = process.env.DB_USER;
+const password = process.env.DB_PASSWORD;
+const name = process.env.DB_NAME;
+const permissions = process.env.DB_PERMISSIONS;
+const url = `mongodb+srv://${user}:${password}@${name}.ebuav.mongodb.net/?${permissions}`;
 mongoose.connect(url);
 let db = mongoose.connection;
 db.on('error',()=>{console.log('Error')});
-db.once('open',()=>{console.log('Mongo DB connected')});
+db.once('open',()=>{console.log('Mongo DB connected\n')});
