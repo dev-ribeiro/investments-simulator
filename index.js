@@ -6,9 +6,9 @@ const express = require('express');
 const app = express();
 
 // Routes
-const apresentationRoute = require('./routes/apresentationRouter/apresentationRouter');
-const calcsRoute = require('./routes/handleCalcsRouter/handleCalcsRoute');
-const ratesRoute = require('./routes/ratesRouter/ratesRouter');
+const apresentationRoute = require('./routes/homeRouter');
+const calcsRoute = require('./routes/handleCalcsRoute');
+const ratesRoute = require('./routes/ratesRouter');
 
 // Application
 app.use(cors())
